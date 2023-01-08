@@ -4,7 +4,7 @@ const{registerView,loginView,registerUser,loginUser,logOut}= require('../control
 const{dashboardView}=require('../controllers/dashboardController')
 
 router.get('/register',registerView);
-router.get('/login',loginView);
+router.get('/',loginView);
 router.post("/register", registerUser);
 router.get("/dashboard", protectRoute, dashboardView);
 router.post("/login", loginUser);
